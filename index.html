@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Digimon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body onload="checkCookies()" class="mi-background">
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!--aqui se aloja el texto que genera el evento onload para los cookies (eventoNº2)-->
+      <div>
+         <b> <p id="demo" class="text-end text-primary"></p></b>
+      </div>
+
+    
+    <div class="container ">
+        <div class="row d-flex justify-content-center pt-5">
+            <div class="card bg-dark mb-5 mi-card">
+                <img src="" class="card-img-top pt-3" alt="" id="imagenDeDigimon">
+                <div class="card-body">
+                  <h5 class="card-title text-warning">Nombre: <span id="nombreDigimon"></span></h5>
+                  <p class="card-text text-warning mt-3">Nivel: <span id="levelDigimon"></span></p>
+                  <form action="" method="get">
+                    <label for="cars" class="text-warning"><h6>Elige tu Digimon:</h6></label>
+                    <select name="digimon" id="eligeDigimon" class="mt-1" onchange="seleccionaDigimon()" >
+                    <option  value="">[Selecciona]</option>
+                      <option  value="koromon">Koromon</option>
+                      <option value="Tsunomon">Tsunomon</option>
+                      <option  value="Yokomon">Yokomon</option>
+                      <option  value="Motimon">Motimon</option>
+                      <option  value="Tanemon">Tanemon</option>
+                      <option  value="Bukamon">Bukamon</option>
+                      <option  value="Tokomon">Tokomon</option>
+                      <option  value="Agumon">Agumon</option>
+                      <option  value="Gabumon">Gabumon</option>
+                      <option  value="Biyomon">Biyomon</option>
+                      <option  value="Tentomon">Tentomon</option>
+                      <option  value="Palmon">Palmon</option>
+                      <option  value="Gomamon">Gomamon</option>
+                      <option  value="Patamon">Patamon</option>
+                      <option  value="Kuwagamon">Kuwagamon</option>
+                      <option  value="Greymon">Greymon</option>
+                      <option  value="Shellmon">Shellmon</option>
+                      <option  value="Garurumon">Garurumon</option>
+                      <option  value="Seadramon">Seadramon</option>
+                      <option  value="Monochromon">Monochromon</option>
+                      <option  value="Birdramon">Birdramon</option>
+                      <option  value="Meramon">Meramon</option>
+                      <option  value="Kabuterimon">Kabuterimon</option>
+                      <option  value="Andromon">Andromon</option>
+                      <option  value="Togemon">Togemon</option>
+                      <option  value="Numemon">Numemon</option>
+                      <option  value="Monzaemon">Monzaemon</option>
+                      <option  value="Ikkakumon">Ikkakumon</option>
+                      <option  value="Unimon">Unimon</option>
+                      <option  value="Leomon">Leomon</option>
+                      <option  value="Ogremon">Ogremon</option>
+                      <option  value="Devimon">Devimon</option>
+                      <option  value="Frigimon">Frigimon</option>
+                      <option  value="Mojyamon">Mojyamon</option>
+                      <option  value="Sukamon">Sukamon</option>
+                      <option  value="Centarumon">Centarumon</option>
+                      <option  value="Bakemon">Bakemon</option>
+                      <option  value="Elecmon">Elecmon</option>
+                      <option  value="Botamon">Botamon</option>
+                      <option  value="Punimon">Punimon</option>
+                      <option  value="Poyomon">Poyomon</option>
+                      <option  value="Yuramon">Yuramon</option>
+                      <option  value="Angemon">Angemon</option>ç
+                      <option  value="Whamon">Whamon</option>
+                      <option  value="Drimogemon">Drimogemon</option>
+                      <option  value="Etemon">Etemon</option>
+                      <option  value="Gazimon">Gazimon</option>
+                      <option  value="Pagumon">Pagumon</option>
+                      <option  value="Skullgreymon">Skullgreymon</option>
+                      <option  value="Kokatorimon">Kokatorimon</option>
+                      <option  value="Tyrannomon">Tyrannomon</option>
+                      <option  value="Piximon">Piximon</option>
+                      <option  value="Datamon">Datamon</option>
+                      <option  value="MetalGreymon">MetalGreymon</option>
+                      <option  value="DemiDevimon">DemiDevimon</option>
+                      <option  value="WereGarurumon">WereGarurumon</option>
+                      <option  value="Digitamamon">Digitamamon</option>
+                      <option  value="Vigiemon">Vigiemon</option>
+                      <option  value="Myotismon">Myotismon</option>
+                      <option  value="Vademon">Vademon</option>
+                      <option  value="Pabumon">Pabumon</option>
+                      <option  value="Gekomon">Gekomon</option>
+                      <option  value="Otamamon">Otamamon</option>
+                      <option  value="ShogunGekomon">ShogunGekomon</option>
+                      <option  value="Garudamon">Garudamon</option>
+                      <option  value="Flymon">Flymon</option>
+                      <option  value="Gatomon">Gatomon</option>
+                      <option  value="Nanimon">Nanimon</option>
+                      <option  value="Devidramon">Devidramon</option>
+                      <option  value="Dokugumon">Dokugumon</option>
+                      <option  value="Mammothmon">Mammothmon</option>
+                      <option  value="Gesomon">Gesomon</option>
+                      <option  value="Raremon">Raremon</option>
+                      <option  value="Skullmeramon">Skullmeramon</option>
+                      <option  value="Wizardmon">Wizardmon</option>
+                      <option  value="Pumpkinmon">Pumpkinmon</option>
+                      <option  value="Gotsumon">Gotsumon</option>
+                      <option  value="Lillymon">Lillymon</option>
+                      <option  value="Phantomon">Phantomon</option>
+                      <option  value="DarkTyrannomon">DarkTyrannomon</option>
+                      <option  value="Gizamon">Gizamon</option>
+                      <option  value="Zudomon">Zudomon</option>
+                      <option  value="MegaSeadramon">MegaSeadramon</option>
+                      <option  value="Angewomon">Angewomon</option>
+                      <option  value="Tuskmon">Tuskmon</option>
+                      <option  value="Snimon">Snimon</option>
+                      <option  value="MagnaAngemon">MagnaAngemon</option>
+                      <option  value="VenomMyotismon">VenomMyotismon</option>
+                      <option  value="WarGreymon">WarGreymon</option>
+                      <option  value="MetalGarurumon">MetalGarurumon</option>
+                      <option  value="Nyaromon">Nyaromon</option>
+                      <option  value="Salamon">Salamon</option>
+                      <option  value="Parrotmon">Parrotmon</option>
+                      <option  value="Chumon">Chumon</option>
+                      <option  value="MetalSeadramon">MetalSeadramon</option>
+                      <option  value="Machinedramon">Machinedramon</option>
+                      <option  value="Piedmon">Piedmon</option>
+                      <option  value="Puppetmon">Puppetmon</option>
+                      <option  value="Scorpiomon">Scorpiomon</option>
+                      <option  value="Divermon">Divermon</option>
+                      <option  value="Kiwimon">Kiwimon</option>
+                      <option  value="Mushroomon">Mushroomon</option>
+                      <option  value="Blossomon">Blossomon</option>
+                      <option  value="Floramon">Floramon</option>
+                      <option  value="Deramon">Deramon</option>
+                      <option  value="Cherrymon">Cherrymon</option>
+                      <option  value="Garbagemon">Garbagemon</option>
+                      <option  value="MetalEtemon">MetalEtemon</option>
+                      <option  value="SaberLeomon">SaberLeomon</option>
+                      <option  value="RedVegiemon">RedVegiemon</option>
+                      <option  value="Mekanorimon">Mekanorimon</option>
+                      <option  value="Tankmon">Tankmon</option>
+                      <option  value="Hagurumon">Hagurumon</option>
+                      <option  value="WaruMonzaemon">WaruMonzaemon</option>
+                      <option  value="LadyDevimon">LadyDevimon</option>
+                      <option  value="Vilemon">Vilemon</option>
+                      <option  value="Apocalymon">Apocalymon</option>
+                      <option  value="Kunemon">Kunemon</option>
+                      <option  value="Musyamon">Musyamon</option>
+                      <option  value="Starmon">Starmon</option>
+                      <option  value="HerculesKabuterimon">HerculesKabuterimon</option>
+                      <option  value="Candlemon">Candlemon</option>
+                      <option  value="Hanumon">Hanumon</option>
+                      <option  value="Kokuwamon">Kokuwamon</option>
+                      <option  value="Revolvermon">Revolvermon</option>
+                      <option  value="Plesiomon">Plesiomon</option>
+                      <option  value="Megadramon">Megadramon</option>
+                      <option  value="BlueMeramon">BlueMeramon</option>
+                      <option  value="Magnadramon">Magnadramon</option>
+                      <option  value="Gorillamon">Gorillamon</option>
+                      <option  value="Syakomon">Syakomon</option>
+                      <option  value="MarineAngemon">MarineAngemon</option>
+                      <option  value="Boltmon">Boltmon</option>
+                      <option  value="Mamemon">Mamemon</option>
+                      <option  value="ExTyrannomon">ExTyrannomon</option>
+                      <option  value="Veedramon">Veedramon</option>
+                      <option  value="AeroVeedramon">AeroVeedramon</option>
+                      <option  value="Phoenixmon">Phoenixmon</option>
+                      <option  value="Betamon">Betamon</option>
+                      <option  value="Guardromon">Guardromon</option>
+                      <option  value="Penguinmon">Penguinmon</option>
+                      <option  value="PlatinumSukamon">PlatinumSukamon</option>
+                      <option  value="Psychemon">Psychemon</option>
+                      <option  value="Tsukaimon">Tsukaimon</option>
+                      <option  value="ModokiBetamon">ModokiBetamon</option>
+                      <option  value="Saberdramon">Saberdramon</option>
+                      <option  value="SnowAgumon">SnowAgumon</option>
+                      <option  value="Icemon">Icemon</option>
+                      <option  value="Airdramon">Airdramon</option>
+                      <option  value="MetalTyrannomon">MetalTyrannomon</option>
+                      <option  value="Akatorimon">Akatorimon</option>
+                      <option  value="Geremon">Geremon</option>
+                      <option  value="Vermilimon">Vermilimon</option>
+                      <option  value="Meteormon">Meteormon</option>
+                      <option  value="Jijimon">Jijimon</option>
+                      <option  value="Babamon">Babamon</option>
+                      <option  value="FlareRizamon">FlareRizamon</option>
+                      <option  value="Thunderballmon">Thunderballmon</option>
+                      <option  value="Muchomon">Muchomon</option>
+                      <option  value="Goldramon">Goldramon</option>
+                      <option  value="Soulmon">Soulmon</option>
+                      <option  value="Rosemon">Rosemon</option>
+                      <option  value="Piddomon">Piddomon</option>
+                      <option  value="Gigadramon">Gigadramon</option>
+                      <option  value="Cyberdramon">Cyberdramon</option>
+                      <option  value="SkullSatamon">SkullSatamon</option>
+                      <option  value="Milleniummon">Milleniummon</option>
+                      <option  value="Daemon">Daemon</option>
+                      <option  value="KingEtemon">KingEtemon</option>
+                      <option  value="Chibomon">Chibomon</option>
+                      <option  value="Pururumon">Pururumon</option>
+                      <option  value="Tsubumon">Tsubumon</option>
+                      <option  value="DeviVeemon">DeviVeemon</option>
+                      <option  value="Poromon">Poromon</option>
+                      <option  value="Upamon">Upamon</option>
+                      <option  value="Hawkmon">Hawkmon</option>
+                      <option  value="Armadillomon">Armadillomon</option>
+                      <option  value="Wormmon">Wormmon</option>
+                      <option  value="Flamedramon">Flamedramon</option>
+                      <option  value="Raidramon">Raidramon</option>
+                      <option  value="Magnamon">Magnamon</option>
+                      <option  value="Sethmon">Sethmon</option>
+                      <option  value="Halsemon">Halsemon</option>
+                      <option  value="Shurimon">Shurimon</option>
+                      <option  value="Toucanmon">Toucanmon</option>
+                      <option  value="Submarimon">Submarimon</option>
+                      <option  value="Bucchiemon">Bucchiemon</option>
+                      <option  value="Stegomon">Stegomon</option>
+                      <option  value="Pegasusmon">Pegasusmon</option>
+                      <option  value="Nefertimon">Nefertimon</option>
+                      <option  value="ExVeemon">ExVeemon</option>
+                      <option  value="Stingmon">Stingmon</option>
+                      <option  value="Aquillamon">Aquillamon</option>
+                      <option  value="Ankylomon">Ankylomon</option>
+                      <option  value="Paildramon">Paildramon</option>
+                      <option  value="Dinobeemon">Dinobeemon</option>
+                      <option  value="Silphymon">Silphymon</option>
+                      <option  value="Shakkoumon">Shakkoumon</option>
+                      <option  value="Imperialdromon">Imperialdromon</option>
+                      <option  value="GranKuwagamon">GranKuwagamon</option>
+                      <option  value="Valkyrimon">Valkyrimon</option>
+                      <option  value="Vikemon">Vikemon</option>
+                      <option  value="Seraphimon">Seraphimon</option>
+                      <option  value="Zhuqiaomon">Zhuqiaomon</option>
+                      <option  value="Azulongmon">Azulongmon</option>
+                      <option  value="Baihumon">Baihumon</option>
+                      <option  value="Mokumon">Mokumon</option>
+                      <option  value="Omnimon">Omnimon</option>
+                      
+                    </select>
+                    <br><br>
+                  </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

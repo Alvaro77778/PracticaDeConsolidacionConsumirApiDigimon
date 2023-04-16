@@ -1,0 +1,9 @@
+.mi-background {
+    background-image: url(../img/wp2624601.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+.mi-card {
+    width: 18rem;
+}
